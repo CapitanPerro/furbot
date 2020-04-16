@@ -1,15 +1,14 @@
+import discord
+
 from discord.ext import commands
 bot = commands.Bot(command_prefix='=', description='a simple test bot')
 
 
 @bot.event
 async def on_ready():
-    print('Logged in as')
-    print(bot.user.name)
-    print('discriminator: #8860')
-    print('user ID: 620990340630970425')
     print(f"Toothless is currently in {len(bot.guilds)} guilds")
     print('bot has started successfully')
+
 @bot.command(name="ping", aliases=["latency"], brief="Shows latency from bot!")
 async def greet_back_command(ctx):
     await ctx.send(f"bot ping: **{'{:.2f}'.format(bot.latency)}**ms")
