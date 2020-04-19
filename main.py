@@ -8,9 +8,9 @@ bot = commands.Bot(command_prefix='=', description='a simple test bot')
 async def on_ready():
     activity = discord.Game(name="with tennis balls | =help", type=2)
     await bot.change_presence(status=discord.Status.dnd, activity=activity)
-    print("Toothless is weady ^-^")
-    print(f"Toothless is cuwwently in {len(bot.guilds)} guilds")
-    print('bot has stawted successfully uwu')
+    print("Toothless is ready ^-^")
+    print(f"Toothless is currently in {len(bot.guilds)} guilds")
+    print('bot has started successfully')
 
 @bot.command(name="ping", aliases=["latency"], brief="Shows latency from bot!")
 async def greet_back_command(ctx):
@@ -22,5 +22,5 @@ async def greet_back_command(ctx):
 
 @bot.command(name="stats", aliases=["statistics"], brief="shows bot statistics.")
 async def greet_back_command(ctx):
-    await ctx.send(f"Statistics Toothless:\n ➤ in **{len(bot.guilds)}** guilds")
+    await ctx.send(f"Statistics Toothless:\n ➤ in **{len(bot.guilds)}** guilds.\n ➤ More to come soon")
 bot.run('NjIwOTkwMzQwNjMwOTcwNDI1.XphJPw.eE4vpvudxp5M2He-ki-QSURq6xE') 
