@@ -20,4 +20,7 @@ async def greet_back_command(ctx):
 async def greet_back_command(ctx):
     await ctx.send(f"invite link: __**https://discordapp.com/api/oauth2/authorize?client_id=620990340630970425&permissions=8&scope=bot**__")
 
+@bot.command(name="stats", aliases=["statistics"], brief="shows bot statistics.")
+async def greet_back_command(ctx):
+    await ctx.send(f"Statistics Toothless:\n ➤ in **{len(bot.guilds)}** guilds")
 bot.run('NjIwOTkwMzQwNjMwOTcwNDI1.XphJPw.eE4vpvudxp5M2He-ki-QSURq6xE') 
