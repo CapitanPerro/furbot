@@ -6,8 +6,11 @@ bot = commands.Bot(command_prefix='=', description='a simple test bot')
 
 @bot.event
 async def on_ready():
-    print(f"Toothless is currently in {len(bot.guilds)} guilds")
-    print('bot has started successfully')
+    activity = discord.Game(name="with tennis balls | =help", type=2)
+    await bot.change_presence(status=discord.Status.dnd, activity=activity)
+    print("Toothless is weady ^-^")
+    print(f"Toothless is cuwwently in {len(bot.guilds)} guilds")
+    print('bot has stawted successfully uwu')
 
 @bot.command(name="ping", aliases=["latency"], brief="Shows latency from bot!")
 async def greet_back_command(ctx):
@@ -17,4 +20,4 @@ async def greet_back_command(ctx):
 async def greet_back_command(ctx):
     await ctx.send(f"invite link: __**https://discordapp.com/api/oauth2/authorize?client_id=620990340630970425&permissions=8&scope=bot**__")
 
-bot.run('NjIwOTkwMzQwNjMwOTcwNDI1.XphJPw.eE4vpvudxp5M2He-ki-QSURq6xE')
+bot.run('NjIwOTkwMzQwNjMwOTcwNDI1.XphJPw.eE4vpvudxp5M2He-ki-QSURq6xE') 
