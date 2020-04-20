@@ -10,7 +10,7 @@ async def on_ready():
     await bot.change_presence(status=discord.Status.dnd, activity=activity)
     print("Toothless is ready ^-^")
     print(f"Toothless is currently in {len(bot.guilds)} guilds")
-    print('bot has started successfully')
+    print('Bot has started successfully')
 
 @bot.command(name="ping", aliases=["latency"], brief="Shows latency from bot!")
 async def greet_back_command(ctx):
@@ -22,5 +22,8 @@ async def greet_back_command(ctx):
 
 @bot.command(name="stats", aliases=["statistics"], brief="shows bot statistics.")
 async def greet_back_command(ctx):
-    await ctx.send(f"Statistics Toothless:\n ➤ in **{len(bot.guilds)}** guilds.\n ➤ More to come soon")
+	embed=discord.Embed(title="Statistics Toothless:", description="Global Bot Statistics", color=0x00ff00)
+	embed.add_field(name="Total Guilds", value=len(bot.guilds), inline=False)
+	embed.add_field(name="More", value="comming soon...", inline=False)
+	await ctx.send(embed=embed)
 bot.run('NjIwOTkwMzQwNjMwOTcwNDI1.XphJPw.eE4vpvudxp5M2He-ki-QSURq6xE') 
