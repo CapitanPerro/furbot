@@ -27,5 +27,7 @@ async def greet_back_command(ctx):
 	embed.add_field(name="Total users", value=len(bot.users), inline=False)
 	embed.add_field(name="More:", value="Coming soon...", inline=False)
 	await ctx.send(embed=embed)
-
+		   
+import config
+		   
 bot.run(config.token)
