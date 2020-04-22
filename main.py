@@ -3,7 +3,6 @@ import discord
 from discord.ext import commands
 bot = commands.Bot(command_prefix='=', description='a simple test bot')
 
-
 @bot.event
 async def on_ready():
     activity = discord.Game(name="with tennis balls | =help", type=2)
@@ -39,5 +38,5 @@ async def get_id(ctx, member: discord.Member):
   await ctx.send('The user id is %d.' % user_id)
 
 import config
-		   
+
 bot.run(config.token)
