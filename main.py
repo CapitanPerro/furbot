@@ -28,4 +28,4 @@ async def greet_back_command(ctx):
 	embed.add_field(name="More:", value="Coming soon...", inline=False)
 	await ctx.send(embed=embed)
 
-bot.run("NjIwOTkwMzQwNjMwOTcwNDI1.Xp9PAg.VmsaQQaYAxglQ83I8Bv8sSFSWG4")
+bot.run(config.token)
