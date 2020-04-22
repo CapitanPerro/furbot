@@ -4,3 +4,5 @@ Toothless is a bot programmed in python, created by Bluewy Echache for selflearn
 It is currently not open to public and is unlikely to ever be. 
 
 ## This bot is a product of Furcraft Universal, owned by Bluewy Echache, Fenyr and Dylan, collaborators: Julian
+
+# Please report any mistakes in the code to FireGamingYT
