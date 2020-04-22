@@ -10,4 +10,14 @@ To ensure that contributions are done in a proper way, we have a few guidelines.
 
 Contributions are, logically required to be related to the project. 
 The project is known to be a discord bot, named as Toothless coded in Python.
-Please note that contributions with any other language then python does not get accepted.
+Please note that contributions with any other language then python does not get accepted. Besides that:
+The following type of contributions do not get accepted: ( **not limited to just these** )
+- Contributions which do not have any benefit for the project
+- Contributions which do not contain proper, and normal Python coding
+- Contributions which contain inappropiate language
+  Inappropiate language includes: ( **but is not limited to** )
+  - cursing
+  - Sexual language
+  - Bad grammar
+- Contributions that are duplicate 
+- Contributions which have been copied from other repo's or search engines
