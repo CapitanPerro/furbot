@@ -25,6 +25,7 @@ async def greet_back_command(ctx):
 	embed=discord.Embed(title="Statistics Toothless:", description="Global Bot Statistics", color=0x00ff00)
 	embed.add_field(name="Total Guilds", value=len(bot.guilds), inline=False)
 	embed.add_field(name="Total users", value=len(bot.users), inline=False)
+	embed.add_field(name="More:", value="Coming soon...", inline=False)
 	await ctx.send(embed=embed)
 
 bot.run("NjIwOTkwMzQwNjMwOTcwNDI1.Xp9PAg.VmsaQQaYAxglQ83I8Bv8sSFSWG4")
