@@ -75,4 +75,4 @@ available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.ht
 For answers to common questions about this code of conduct, see
 https://www.contributor-covenant.org/faq
 
-## THE COC CAN BE CHANGED AT ANY TIME. PLEASE BE AWARE OF THIS.
+## THE COC CAN BE CHANGED AT ANY TIME. PLEASE BE AWARE OF THIS!
