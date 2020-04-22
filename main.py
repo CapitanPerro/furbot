@@ -20,10 +20,15 @@ async def greet_back_command(ctx):
 async def greet_back_command(ctx):
     await ctx.send(f"invite link: __**https://discordapp.com/api/oauth2/authorize?client_id=620990340630970425&permissions=8&scope=bot**__")
 
+@bot.command(name="warning", brief="Summons the pawlice")
+async def greet_back_command(ctx):
+    await ctx.send(f"Thewe is no wunning, me can nots be destwoyed ow huwt, it's pwison time fow the naughty fox")
+
 @bot.command(name="stats", aliases=["statistics"], brief="shows bot statistics.")
 async def greet_back_command(ctx):
 	embed=discord.Embed(title="Statistics Toothless:", description="Global Bot Statistics", color=0x00ff00)
 	embed.add_field(name="Total Guilds", value=len(bot.guilds), inline=False)
-	embed.add_field(name="More", value="coming soon...", inline=False)
+	embed.add_field(name="Total users", value=len(bot.users), inline=False)
 	await ctx.send(embed=embed)
-bot.run('NjIwOTkwMzQwNjMwOTcwNDI1.XphJPw.eE4vpvudxp5M2He-ki-QSURq6xE') 
+
+bot.run("NjIwOTkwMzQwNjMwOTcwNDI1.Xp9PAg.VmsaQQaYAxglQ83I8Bv8sSFSWG4")
